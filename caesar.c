@@ -25,6 +25,13 @@ int main(int argc, string argv[])
 
     int key = atoi(argv[1]);
 
+
+    if (key == 26)
+    {
+        printf("You cannot use 26; that returns the same number.\n");
+        return 1;
+    }
+
     string plaintext = get_string("Plaintext: ");
 
     printf("ciphertext: ");
